@@ -8,6 +8,7 @@ from os import path
 def cls():
     os.system('cls' if os.name == 'nt' else 'clear')
 
+
 # starts level
 print("\nLoading...")
 
