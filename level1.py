@@ -17,6 +17,7 @@ async def main(int_tries=3):
     await asyncio.sleep(2)
     print('\nFinished!')
     await asyncio.sleep(2)
+    cls()
     color = input('\n\nRed or Blue?\n\n')
     file = open("color.txt", "w")
     print('*writes that down*')
