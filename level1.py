@@ -43,6 +43,7 @@ async def main(int_tries=3):
     while kill:
         if kill.startswith("y") or kill.startswith("Y") or kill.startswith("a") or kill.startswith("A"):
             print("Oh thanks for the quick answer, hope you like prison cause your gonna be there for a while.")
+            await asyncio.sleep(2)
             quit()
         else:
             break
