@@ -1,7 +1,13 @@
 import asyncio
 import subprocess
 import time
+import os
 from os import path
+
+
+def cls():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 
 print("\nLoading...")
 
@@ -16,18 +22,21 @@ async def main(int_tries=3):
     print('*writes that down*')
     file.write(color)
     await asyncio.sleep(1)
+    cls()
     print('Go on...')
     name = input('What is your name?\n\n')
     file = open("name.txt", "w")
     print('*writes that down*')
     file.write(name)
     await asyncio.sleep(1)
+    cls()
     print('Go on...')
     live = input('Where do you live?\n\n')
     file = open("live.txt", "w")
     print('*writes that down*')
     file.write(live)
     await asyncio.sleep(1)
+    cls()
     print('Go on...')
     kill = input('Did you kill anyone?\n\n')
     while kill:
@@ -39,6 +48,7 @@ async def main(int_tries=3):
     file = open("kill.txt", "w")
     print('*writes that down*')
     file.write(kill)
+    cls()
     await asyncio.sleep(1)
     print('Go on...')
     q = input('Where do you live?\n\n')
@@ -47,6 +57,7 @@ async def main(int_tries=3):
     file.close()
     while q:
         if q in answer:
+            cls()
             print('Go on...')
             break
         else:
@@ -65,6 +76,7 @@ async def main(int_tries=3):
     while q:
         if q in answer:
             print('Go on...')
+            cls()
             break
         else:
             print('You are not that great at lying...')
@@ -81,6 +93,7 @@ async def main(int_tries=3):
     file.close()
     while q:
         if q in answer:
+            cls()
             print('Go on...')
             break
         else:
@@ -98,6 +111,7 @@ async def main(int_tries=3):
     file.close()
     while q:
         if q in answer:
+            cls()
             print('Go on...')
             break
         else:
@@ -114,12 +128,15 @@ async def main(int_tries=3):
     print('*writes that down*')
     file.write(live)
     await asyncio.sleep(1)
+    cls()
+    print('Go on...')
     q = input('Red or Blue?\n\n')
     file = open("color.txt")
     answer = file.read().replace("\n", " ")
     file.close()
     while q:
         if q in answer:
+            cls()
             print('Go on...')
             break
         else:
@@ -137,6 +154,7 @@ async def main(int_tries=3):
     file.close()
     while q:
         if q in answer:
+            cls()
             print('Go on...')
             break
         else:
@@ -154,6 +172,7 @@ async def main(int_tries=3):
     file.close()
     while q:
         if q in answer:
+            cls()
             print('Go on...')
             break
         else:
@@ -171,6 +190,7 @@ async def main(int_tries=3):
     file.close()
     while q:
         if q in answer:
+            cls()
             print('Go on...')
             break
         else:
@@ -188,6 +208,7 @@ async def main(int_tries=3):
     file.close()
     while q:
         if q in answer:
+            cls()
             print('Go on...')
             break
         else:
@@ -205,6 +226,7 @@ async def main(int_tries=3):
     file.close()
     while q:
         if q in answer:
+            cls()
             print('Go on...')
             break
         else:
@@ -222,6 +244,7 @@ async def main(int_tries=3):
     file.close()
     while q:
         if q in answer:
+            cls()
             print('Go on...')
             break
         else:
@@ -239,6 +262,7 @@ async def main(int_tries=3):
     file.close()
     while q:
         if q in answer:
+            cls()
             print('Go on...')
             break
         else:
@@ -256,6 +280,7 @@ async def main(int_tries=3):
     file.close()
     while q:
         if q in answer:
+            cls()
             print('Go on...')
             break
         else:
@@ -273,6 +298,7 @@ async def main(int_tries=3):
     file.close()
     while q:
         if q in answer:
+            cls()
             print('Go on...')
             break
         else:
