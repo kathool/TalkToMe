@@ -257,7 +257,7 @@ async def main(int_tries=3):
                 break
     await asyncio.sleep(1)
     q = input('How old are you?\n\n')
-    file = open("color.txt")
+    file = open("age.txt")
     answer = file.read().replace("\n", " ")
     file.close()
     while q:
