@@ -4,6 +4,10 @@ import subprocess
 import time
 from os import path
 
+# clarifies what cls() does
+def cls():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 # starts level
 print("\nLoading...")
 
@@ -13,12 +17,14 @@ async def main(int_tries=3):
     await asyncio.sleep(2)
     print('\nFinished!')
     await asyncio.sleep(2)
+    cls()
     # First-Time Question
     QUESTIONNAMEGOESHERE = input('\n\QUESTION GOES HERE\n\n')
     file = open("QUESTIONNAMEGOESHERE.txt", "w")
     print('*writes that down*')
     file.write(color)
     await asyncio.sleep(1)
+    cls()
     print('Go on...')
     # Repeated Question
     q = input('QUESTION GOES HERE\n\n')
@@ -27,6 +33,7 @@ async def main(int_tries=3):
     file.close()
     while q:
         if q in answer:
+            cls()
             print('Go on...')
             break
         else:
